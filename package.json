@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sked/react-native-boundary.git"
+    "url": "git+https://github.com/skedlife/react-native-boundary.git"
   },
   "typings": "typings/index.d.ts",
   "keywords": [
