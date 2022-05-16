@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eddieowens">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application>
+        <!-- Services -->
+        <service
+            android:name=".services.BoundaryEventJobIntentService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.eddieowens.services.BoundaryEventHeadlessTaskService" />
+
+        <!-- Receivers -->
+        <receiver
+            android:name=".receivers.BoundaryEventBroadcastReceiver"
+            android:enabled="true" />
+    </application>
+</manifest>
+  
