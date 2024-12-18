@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 ##############################################################################
 ##
@@ -33,13 +33,14 @@ DEFAULT_JVM_OPTS=""
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD="maximum"
 
-warn () {
-    echo "$*"
+warn()
+{
+    echo "$1"
 }
 
 die () {
     echo
-    echo "$*"
+    echo "$1"
     echo
     exit 1
 }
